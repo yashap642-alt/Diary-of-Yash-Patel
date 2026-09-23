@@ -1,0 +1,394 @@
+<div class="rotate-art" aria-hidden="true">
+    <svg viewBox="0 0 96 96" fill="none">
+      <g class="rh-phone">
+        <rect x="35" y="14" width="26" height="50" rx="6" stroke="currentColor" stroke-width="2.4"/>
+        <path d="M43 20h10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M43 58h10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+      </g>
+      <path class="rh-arc" d="M18 80c-6-10-6-20 0-30" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-dasharray="2 8"/>
+      <path class="rh-tip" d="M15 68l3-8 5 7z" fill="currentColor"/>
+    </svg>
+  </div><!DOCTYPE html>
+<html lang="en" data-theme="reel">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yash Patel — a life, kept in moments</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23131110'/%3E%3Cpath d='M8 6h13a3 3 0 0 1 3 3v17H11a3 3 0 0 1-3-3z' fill='none' stroke='%23e3b681' stroke-width='1.6'/%3E%3Cpath d='M8 23h16' stroke='%23e3b681' stroke-width='1.6'/%3E%3C/svg%3E">
+<meta name="description" content="A diary you can walk into: Yash Patel's life, kept in moments.">
+<style>/*__CSS__*/</style>
+</head>
+<body>
+
+<div class="dissolve" id="dissolve"></div>
+
+<!-- ══════════════════════════ COVER ══════════════════════════ -->
+<section class="screen cover-screen is-active" id="screenCover">
+  <div class="cover-stage">
+    <div class="book" id="book">
+      <div class="book-inside" id="bookInside">
+        <div class="inside-page">
+          <div class="inside-eyebrow">the diary of</div>
+          <h2 class="inside-name">Yash Patel</h2>
+          <p class="inside-line">Everything you are about to see was lived first and written after.</p>
+          <div class="inside-stats" id="insideStats"></div>
+        </div>
+      </div>
+      <div class="leaves" aria-hidden="true">
+        <div class="leaf l1"></div>
+        <div class="leaf l2"></div>
+      </div>
+      <div class="book-front" id="bookFront">
+        <div class="cover-back" aria-hidden="true"></div>
+        <div class="book-cover">
+          <div class="foil-frame">
+            <div class="cover-eyebrow">the diary of</div>
+            <h1 class="cover-name">Yash<br>Patel</h1>
+            <div class="cover-rule"></div>
+            <div class="cover-sub">a life, kept in moments</div>
+          </div>
+          <div class="cover-emboss">REEL</div>
+          <div class="ribbon"></div>
+        </div>
+        <div class="book-pages"></div>
+        <div class="book-spine"></div>
+      </div>
+    </div>
+    <button class="cover-hint" id="openCover"><span>open the diary</span></button>
+    <div class="cover-note">you are visiting someone's life · handle it gently</div>
+    <div class="cover-clock" id="coverClock"></div>
+  </div>
+  <div class="cover-spread" id="coverSpread" aria-hidden="true"></div>
+</section>
+
+<!-- ══════════════════════════ FOYER ══════════════════════════ -->
+<section class="screen foyer-screen" id="screenFoyer">
+  <div class="foyer">
+    <div class="foyer-lede">
+      <div class="eyebrow">inside the diary</div>
+      <h2>You are visiting the life of <b>Yash Patel</b>.</h2>
+      <p>Two doors. One writes today down, the other walks back through what is already kept.</p>
+    </div>
+    <div class="doors">
+      <button class="door" data-dest="lab" id="doorLab">
+        <span class="door-art" aria-hidden="true">
+          <svg viewBox="0 0 120 90" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+            <path d="M14 70c14-6 30-6 44 0 14-6 30-6 44 0" opacity=".5"/>
+            <path d="M22 62V22c8-3 16-3 24 0v40c-8-3-16-3-24 0Z"/>
+            <path d="M54 62V22c8-3 16-3 24 0v40c-8-3-16-3-24 0Z" opacity=".55"/>
+            <path d="M86 62V26c6-3 12-3 18 0v36" opacity=".3"/>
+            <path d="M60 30h12M60 38h9M28 34h12M28 42h9" opacity=".7"/>
+          </svg>
+        </span>
+        <span class="door-body">
+          <span class="door-kicker">the first square</span>
+          <span class="door-title">Write something</span>
+          <span class="door-text">The writing lab. Say it exactly how it arrived — the ache, the wish, the numbers, the person.</span>
+        </span>
+        <span class="door-go">→</span>
+      </button>
+
+      <button class="door" data-dest="shelf" id="doorShelf">
+        <span class="door-art" aria-hidden="true">
+          <svg viewBox="0 0 120 90" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+            <path d="M12 26h96M12 50h96M12 74h96" opacity=".45"/>
+            <rect x="20" y="8" width="9" height="18" rx="1.5"/>
+            <rect x="32" y="5" width="7" height="21" rx="1.5" opacity=".75"/>
+            <rect x="42" y="10" width="10" height="16" rx="1.5" opacity=".55"/>
+            <rect x="62" y="32" width="8" height="18" rx="1.5"/>
+            <rect x="73" y="29" width="10" height="21" rx="1.5" opacity=".65"/>
+            <rect x="26" y="56" width="11" height="18" rx="1.5"/>
+            <rect x="40" y="59" width="8" height="15" rx="1.5" opacity=".7"/>
+            <rect x="52" y="54" width="9" height="20" rx="1.5" opacity=".5"/>
+          </svg>
+        </span>
+        <span class="door-body">
+          <span class="door-kicker">the second square</span>
+          <span class="door-title">Visit the moments</span>
+          <span class="door-text" id="doorShelfText">The library. Every moment kept on a shelf, waiting to be opened again.</span>
+        </span>
+        <span class="door-go">→</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ WRITING LAB ══════════════════════════ -->
+<section class="screen lab-screen" id="screenLab">
+  <div class="lab-wrap">
+    <header class="bar">
+      <div class="brand">
+        <span class="brand-mark">REEL</span>
+        <span class="brand-sub" id="labDate"></span>
+      </div>
+      <div class="bar-actions">
+        <button class="btn ghost keeper-btn js-keeper" aria-label="Sign in to write, change or delete">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1a3.2 3.2 0 0 0-3.2 3.2V6H4.4A1.4 1.4 0 0 0 3 7.4v5.2A1.4 1.4 0 0 0 4.4 14h7.2a1.4 1.4 0 0 0 1.4-1.4V7.4A1.4 1.4 0 0 0 11.6 6h-.4V4.2A3.2 3.2 0 0 0 8 1zm0 1.4a1.8 1.8 0 0 1 1.8 1.8V6H6.2V4.2A1.8 1.8 0 0 1 8 2.4z"/></svg>
+          <span>Keeper</span>
+        </button>
+        <button class="btn ghost icon theme-toggle" id="themeToggle" title="Change the light" aria-label="Change the light"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M13.1 2.6a7.4 7.4 0 1 0 4.2 13.3A5.9 5.9 0 0 1 13.1 2.6z"/></svg></button>
+        <button class="btn ghost" id="navExit">Exit</button>
+      </div>
+    </header>
+
+    <div class="desk">
+      <div class="pane">
+        <div class="pane-head">
+          <div class="eyebrow">Today's page — <b>raw thought dump</b></div>
+          <div class="eyebrow" id="draftDate"></div>
+          <div class="eyebrow edit-flag" id="editFlag" hidden></div>
+        </div>
+        <div class="pane-body">
+          <textarea id="draft" spellcheck="true" placeholder="Say it exactly how it came. Unfiltered, at-the-moment — the thought, the ache, the want, the day, the person, the number you're saving toward. Nothing has to be tidy here."></textarea>
+        </div>
+        <div class="pane-foot lab-tools js-keeper-only">
+          <div class="foot-left">
+            <label class="lab-title">
+              <span>title, if you want one of your own</span>
+              <input id="labTitle" maxlength="200" spellcheck="false" placeholder="leave it empty and the reading names it">
+            </label>
+          </div>
+          <div class="foot-left">
+            <label class="switch"><input type="checkbox" id="labPrivate"><span class="track"></span><span class="label">keep this private for now</span></label>
+            <label class="switch"><input type="checkbox" id="labPreviewReady"><span class="track"></span><span class="label">preview</span></label>
+          </div>
+        </div>
+        <div class="pane-foot">
+          <div class="foot-left">
+            <span class="counter" id="counter">0 words · 0 min read</span>
+            <span class="statelamp" id="lamp"><i class="dot"></i><span id="lampText">waiting for your words</span></span>
+            <span class="save-light" id="saveLight">nothing written yet</span>
+          </div>
+          <div class="foot-left">
+            <button class="btn ghost" id="clearDraft">Clear</button>
+            <button class="btn ghost" id="previewBtn">Preview</button>
+            <button class="btn" id="readNow">Read it now</button>
+          </div>
+        </div>
+        <div class="pane-foot" id="recentFoot" style="display:none">
+          <div class="recent" id="recentRow"><b>Recently archived</b></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="pane">
+        <div class="pane-head">
+          <div class="eyebrow">Assessment <b id="confLabel"></b></div>
+          <div class="eyebrow" id="modeLabel">listening</div>
+        </div>
+        <div class="pane-body" id="panel">
+          <div class="reader-empty" id="panelEmpty">
+            <h3>The page is still blank.</h3>
+            <p>Write on the left and I'll read as you go — the emotional weather, what your body and mind are doing, which chapter this belongs to, and the titles this moment deserves.</p>
+            <div class="ghost-list" id="ghostFolders"></div>
+          </div>
+          <div id="panelLive" style="display:none"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ LIBRARY ══════════════════════════ -->
+<section class="screen shelf-screen" id="screenShelf">
+  <div class="shelf-wrap">
+    <header class="bar">
+      <div class="brand">
+        <span class="brand-mark">REEL</span>
+        <span class="brand-sub" id="shelfSub">the moments of Yash Patel</span>
+        <span class="brand-sub" id="shelfClock"></span>
+        <span class="brand-sub" id="shelfOrigin" hidden></span>
+        <span class="brand-sub sync-note" id="shelfSync"></span>
+      </div>
+      <div class="bar-actions">
+        <button class="btn ghost keeper-btn js-keeper" aria-label="Sign in to write, change or delete">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1a3.2 3.2 0 0 0-3.2 3.2V6H4.4A1.4 1.4 0 0 0 3 7.4v5.2A1.4 1.4 0 0 0 4.4 14h7.2a1.4 1.4 0 0 0 1.4-1.4V7.4A1.4 1.4 0 0 0 11.6 6h-.4V4.2A3.2 3.2 0 0 0 8 1zm0 1.4a1.8 1.8 0 0 1 1.8 1.8V6H6.2V4.2A1.8 1.8 0 0 1 8 2.4z"/></svg>
+          <span>Keeper</span>
+        </button>
+        <button class="btn ghost icon theme-toggle" id="themeToggle2" title="Change the light" aria-label="Change the light"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M13.1 2.6a7.4 7.4 0 1 0 4.2 13.3A5.9 5.9 0 0 1 13.1 2.6z"/></svg></button>
+        <button class="btn ghost" id="exportAll">Export .json</button>
+      </div>
+    </header>
+
+    <div class="lib-head">
+      <div class="lib-tabs" id="libTabs"></div>
+      <div class="filters">
+        <input id="search" placeholder="Search the shelves — feelings, people, items, places…">
+      </div>
+    </div>
+    <div class="shelf-room" id="shelfRoom"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ MOMENT ══════════════════════════ -->
+<section class="screen moment-screen" id="screenMoment">
+  <div class="scene-bg" id="sceneBg">
+    <div class="scene-layer" id="sceneLayer"></div>
+    <div class="scene-silhouette" id="sceneShape"></div>
+    <canvas class="scene-weather" id="sceneCanvas"></canvas>
+    <div class="scene-vignette"></div>
+  </div>
+  <div class="moment-scroll" id="momentScroll">
+    <div class="moment-inner" id="momentInner"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ THE KEEPER'S DESK ══════════════════════════ -->
+<section class="screen desk-screen" id="screenDesk">
+  <div class="desk-page">
+    <header class="bar">
+      <div class="brand">
+        <span class="brand-mark">REEL</span>
+        <span class="brand-sub">the keeper's desk</span>
+      </div>
+      <div class="bar-actions">
+        <button class="btn ghost" id="deskSignOut">Sign out</button>
+      </div>
+    </header>
+    <p class="desk-lede">
+      Everything you have written, in one place. <b>Drafts</b> are private until you publish them.
+      <b>Thrown away</b> is not the bin: a moment waits there until you delete it for good.
+      Visitors only ever receive published moments.
+    </p>
+    <div class="desk-tabs" id="deskTabs"></div>
+    <div class="desk-room" id="deskRoom"></div>
+    <div class="desk-foot" id="deskFoot"></div>
+  </div>
+</section>
+
+<!-- global back button -->
+<button class="back" id="backBtn" aria-label="Go back">
+  <span class="back-arrow">←</span><span class="back-label" id="backLabel">back</span>
+</button>
+
+<!-- book-opening overlay -->
+<div class="book-open" id="bookOpen" aria-hidden="true">
+  <div class="bo-book" id="boBook">
+    <div class="bo-inside" id="boInside"></div>
+    <div class="bo-front" id="boFront">
+      <div class="bo-leaf front">
+        <span class="bo-mark">Reel</span>
+        <span class="bo-title" id="boTitle"></span>
+        <span class="bo-sub" id="boSub"></span>
+      </div>
+      <div class="bo-leaf back"></div>
+    </div>
+  </div>
+</div>
+
+<!-- portrait invitation (phones only) -->
+<div class="rotate-hint" id="rotateHint" role="status" aria-live="polite">
+  <div class="rotate-art" aria-hidden="true">
+    <svg viewBox="0 0 96 96" fill="none">
+      <rect class="rh-body" x="34" y="18" width="28" height="54" rx="6" stroke="currentColor" stroke-width="2"/>
+      <path class="rh-line" d="M42 64h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path class="rh-arc" d="M16 70a32 32 0 0 1 6-42" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-dasharray="3 7"/>
+      <path class="rh-tip" d="M22 22l-6 5 8 4z" fill="currentColor"/>
+    </svg>
+  </div>
+  <div class="rotate-copy">
+    <b>Turn the page sideways</b>
+    <span>the diary opens wider in landscape — the whole spread, both pages at once.</span>
+  </div>
+  <button class="rotate-dismiss" id="rotateDismiss">read it upright</button>
+</div>
+
+<!-- the keeper's sheet: visitors read, only Yash writes -->
+<div class="admin-sheet" id="adminSheet" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+  <div class="admin-card">
+    <button class="admin-x" id="adminClose" aria-label="Close">×</button>
+
+    <div class="admin-signed-out" id="adminLocked">
+      <div class="eyebrow">The keeper's key</div>
+      <h2 id="adminTitle">Sign in to <b>write</b></h2>
+      <p class="admin-lede" id="adminWhy">Reading is open to everyone. Adding, changing or removing a moment is Yash's.</p>
+
+      <div class="admin-modes" role="tablist">
+        <button class="admin-mode is-on" id="modePass" role="tab">ID &amp; password</button>
+        <button class="admin-mode" id="modePin" role="tab">PIN</button>
+      </div>
+
+      <label class="admin-field" id="fieldId">
+        <span>Keeper ID</span>
+        <input id="adminId" autocomplete="username" spellcheck="false" placeholder="the keeper ID">
+      </label>
+      <label class="admin-field" id="fieldPass">
+        <span id="secretLabel">Password</span>
+        <input id="adminSecret" type="password" autocomplete="current-password" spellcheck="false" placeholder="the password">
+      </label>
+
+      <label class="admin-keep"><input type="checkbox" id="adminKeep"> <span>keep me signed in on this device for 30 days</span></label>
+
+      <p class="admin-err" id="adminErr" hidden></p>
+
+      <div class="admin-actions">
+        <button class="btn solid" id="adminGo">Unlock</button>
+        <button class="admin-link" id="adminForgot">forgot it — mail a code</button>
+      </div>
+
+      <p class="admin-note">
+        Case matters: <b>YashPatel</b> is not <b>yashpatel</b>. Wrong tries wait a little longer each time.
+        A lost key is answered from <b id="adminMail">yashap642@gmail.com</b>; a new one is minted with
+        <b>node tools/keys.js password</b> and set in the host's environment.
+      </p>
+    </div>
+
+    <div class="admin-mfa" id="adminMfa" hidden>
+      <div class="eyebrow">One more thing</div>
+      <h2>Six digits, or a <b>recovery code</b></h2>
+      <p class="admin-lede" id="adminCodeWhy">The six digits from your authenticator app, or one of your recovery codes.</p>
+      <label class="admin-field">
+        <span>Code</span>
+        <input id="adminCode" inputmode="numeric" autocomplete="one-time-code" spellcheck="false" placeholder="000000 or XXXXX-XXXXX">
+      </label>
+      <p class="admin-err" id="adminMfaErr" hidden></p>
+      <div class="admin-actions">
+        <button class="btn solid" id="adminCodeGo">Enter the diary</button>
+        <button class="admin-link" id="adminMfaBack">back</button>
+      </div>
+    </div>
+
+    <div class="admin-signed-in" id="adminOpen" hidden>
+      <div class="eyebrow">Signed in</div>
+      <h2>You are the keeper, <b id="adminWho">Yash</b>.</h2>
+      <p class="admin-lede">You may write, change and delete. Visitors keep reading everything — nothing about the shelf is hidden from them.</p>
+
+      <div class="admin-actions">
+        <button class="btn" id="adminEdit">Change ID &amp; password</button>
+        <button class="btn" id="adminEditPin">Change PIN</button>
+        <button class="btn" id="adminDesk">The keeper's desk</button>
+        <button class="btn" id="adminStore">Where it saves</button>
+        <button class="btn ghost" id="adminHome">Publish by hand</button>
+        <button class="btn ghost" id="adminOut">Sign out</button>
+      </div>
+
+      <div class="admin-panel" id="adminPanel" hidden></div>
+
+      <p class="admin-note" id="adminNote">
+        Reading is open to everyone. Drafts and the trash are yours alone: the server never hands them to a visitor.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- exit credits -->
+<div class="exit" id="exit">
+  <button class="btn ghost icon exit-close" id="exitClose" title="Back to the page">✕</button>
+  <div class="exit-inner" id="creditRoll"></div>
+  <div class="exit-actions">
+    <button class="btn" id="stayBtn">Stay a while longer</button>
+    <button class="btn ghost" id="closeReelBtn">Close the reel</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/*__AUTH__*/
+/*__SESSION__*/
+/*__STORE__*//*__ENGINE__*/</script>
+<script>/*__APP__*/</script>
+</body>
+</html>

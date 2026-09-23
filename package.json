@@ -1,0 +1,15 @@
+{
+  "name": "reel-diary",
+  "version": "1.0.0",
+  "private": true,
+  "description": "REEL — a visitable diary of Yash Patel. One HTML file, a keeper's lock, and a small backend.",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node serve.js",
+    "build": "node build.js",
+    "doctor": "node tools/doctor.js",
+    "test": "node test/ui.test.js && node test/contrast.test.js",
+    "test:browser": "node test/browser.js all",
+    "keys": "node tools/keys.js"
+  }
+}
